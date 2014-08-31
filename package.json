@@ -1,0 +1,40 @@
+{
+  "name": "autopolyfiller-stable",
+  "description": "Stable polyfills for Autopolyfiller",
+  "keywords": [
+    "polyfill",
+    "polyfills",
+    "autopolyfillerplugin",
+    "ecmascript",
+    "ecmascript5"
+  ],
+  "version": "1.0.1",
+  "author": "Mikhail Davydov <i@azproduction.ru>",
+  "contributors": [
+    {
+      "name": "Mikhail Davydov",
+      "email": "i@azproduction.ru"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/azproduction/autopolyfiller-stable.git"
+  },
+  "engines": {
+    "node": ">= 0.8.0"
+  },
+  "dependencies": {
+    "polyfill": "git://github.com/jonathantneal/polyfill.git",
+    "autopolyfiller-helpers": "~1.0.2"
+  },
+  "devDependencies": {
+    "jshint": "2.1.3",
+    "jscs": "~1.4.5",
+    "husky": "~0.5.1"
+  },
+  "scripts": {
+    "test": "jshint . && jscs .",
+    "precommit": "npm test",
+    "prepush": "npm test"
+  }
+}
