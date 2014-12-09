@@ -24,7 +24,7 @@
     "node": ">= 0.8.0"
   },
   "dependencies": {
-    "polyfill": "git://github.com/jonathantneal/polyfill.git",
+    "polyfill": "git://github.com/azproduction/polyfill.git",
     "autopolyfiller-helpers": "~1.0.2"
   },
   "devDependencies": {
